@@ -1,4 +1,4 @@
-E html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
 <html>
 <head>
   <meta http-equiv="Content-Type"
@@ -6,252 +6,123 @@ E html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
   <title>zalevskaya</title>
 </head>
 <body>
-<big><big><big>Основы теории графов<br>
-</big></big></big><b
- style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">Граф</b><span
- style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;">&nbsp;&mdash;
-абстрактный математический объект, представляющий собой множество<span>&nbsp;</span></span><i
- style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">вершин</i><span
- style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>графа
-и набор<span>&nbsp;</span></span><i
- style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">рёбер</i><span
- style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;">,
-то есть соединений между парами вершин. Например, за множество вершин
-можно взять множество аэропортов, обслуживаемых некоторой
-авиакомпанией, а за множество рёбер взять регулярные рейсы этой
-авиакомпании между городами.<br>
-</span><img style="width: 521px; height: 422px;" alt=""
- src="img.JPG"><br>
-Ориентированные и неориентированные графы<br>
+Основы теории графов <br>
+src="img.JPG"&gt;
+<br>
+Ориентированные и неориентированные графы
+<br>
 Графы, в которых все рёбра являются звеньями (порядок двух концов ребра
-графа не существенен), называются неориентированными.<br>
+графа не существенен), называются неориентированными.
+<br>
 Графы, в которых все рёбра являются дугами (порядок двух концов ребра
-графа существенен), называются ориентированными графами или орграфами.<br>
+графа существенен), называются ориентированными графами или орграфами.
+<br>
 Неориентированный граф может быть представлен в виде ориентированного
 графа, если каждое его звено заменить на две дуги, имеющие
-противоположные направления.<br>
+противоположные направления.
+<br>
 <img style="width: 768px; height: 351px;" alt=""
  src="pic2.JPG"><img style="width: 735px; height: 491px;"
- alt="" src="popa.JPG"><br>
-<b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">Связный
-граф</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>&mdash;<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">граф</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;">,
-содержащий ровно одну компоненту связности.<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">Это</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>означает,
-что между любой парой вершин этого<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">графа</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>существует
-как минимум один путь.</span><br>
+ alt="" src="popa.JPG">
 <br>
 <br>
 <br>
 <br>
 <img style="width: 392px; height: 531px;" alt=""
- src="ioi.JPG"><br>
+ src="ioi.JPG">
 <br>
-<br>
-<br>
-<br>
-<b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">Степень</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>или
-валентность<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">вершины
-графа</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>&mdash;
-количество рёбер<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">графа</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>,
-инцидентных<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">вершине</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>.
-При подсчёте<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">степени</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>ребро-петля
-учитывается дважды.<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">Степень
-вершины</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>обычно
-обозначается как или . ... 1 максимальная<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">степень</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>равна
-5, минимальная &mdash; 0.</span><br>
 <br>
 <br>
 <img style="width: 545px; height: 527px;" alt=""
- src="joji.JPG"><br>
+ src="joji.JPG">
 <br>
-<p
- style="color: rgb(0, 0, 0); font-family: Arial; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);"
- align="justify"><strong><em>Деревом</em></strong><span>&nbsp;</span>называется
+<br>
+Деревом называется
 связный граф без циклов (рисунок ниже). Любые две вершины дерева
-соединены лишь одним маршрутом.</p>
-<br class="Apple-interchange-newline">
-<br>
-<span
- style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"></span><span
- class="mwe-math-element"
- style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);"></span><span
- style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"></span><img
- style="width: 444px; height: 430px;" alt="" src="hfv.JPG"><br>
-<span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;">В
-теории графов изоморфизмом графов и называется биекция между
+соединены лишь одним маршрутом.
+В теории графов изоморфизмом графов и называется биекция между
 множествами вершин графов такая, что любые две вершины и графа смежны
 тогда и только тогда, когда вершины и смежны в графе. Здесь графы
 понимаются неориентированными и не имеющими весов вершин и ребер.<br>
 <img style="width: 476px; height: 472px;" alt=""
- src="guy.JPG"><img style="width: 492px; height: 507px;"
- alt="" src="hgfvyhv.JPG"><br>
-</span><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">Эйлеров
-путь в графе &mdash; это путь, проходящий по всем рёбрам графа и
+ src="guy.JPG"> <br>
+<img style="width: 492px; height: 507px;" alt=""
+ src="hgfvyhv.JPG">
+<br>
+Эйлеров
+путь в графе это путь, проходящий по всем рёбрам графа и
 притом
-только по одному разу. Эйлеров цикл &mdash; эйлеров путь,
+только по одному разу. Эйлеров цикл эйлеров путь,
 являющийся
 циклом, то есть замкнутый путь, проходящий через каждое ребро графа
-ровно по одному разу. Эйлеров граф &mdash; граф, содержащий эйлеров
-цикл.</span><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);"><span><span>
-<br>
-<img style="width: 554px; height: 574px;" alt=""
- src="cvhv.JPG"><br>
-</span></span></span><i
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">Эйлеровой
-цепью</i><span
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;"><span>&nbsp;</span>в
-неориентированном графе<span>&nbsp;</span></span><i
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">G</i><span
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;"><span>&nbsp;</span>назы&shy;ва&shy;ется
-простая цепь, содержащая все ребра графа<span>&nbsp;</span></span><i
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">G</i><span
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">.<span>&nbsp;</span></span><i
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">Эйлеровым
-циклом</i><span
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;"><span>&nbsp;</span>назы&shy;вается
-замкнутая Эйлерова цепь. Аналогично,<span>&nbsp;</span></span><i
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">эйлеров
-путь</i><span
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;"><span>&nbsp;</span>в
-орграфе<span>&nbsp;</span></span><i
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">G</i><span
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;"><span>&nbsp;</span>&mdash;
-это простой путь, содержащий все дуги графа<span>&nbsp;</span></span><i
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">G</i><span
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">.<span>&nbsp;</span></span><i
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">Эйлеров
-контур</i><span
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;"><span>&nbsp;</span>в
-орграфе<span>&nbsp;</span></span><i
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">G</i><span
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;"><span>&nbsp;</span>&mdash;
-это замкнутый эйлеров путь. Граф, в котором существует эйлеров цикл,
-называется<span>&nbsp;</span></span><i
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">эйлеровым</i><span
- style="color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">.</span><br>
+ровно по одному разу. Эйлеров граф граф, содержащий эйлеров
+цикл.
+Эйлеров путь (эйлерова цепь) в графе &mdash; это путь, проходящий
+по всем рёбрам графа и притом только по одному разу. (ср. Гамильтонов
+путь)
+Эйлеров цикл &mdash; эйлеров путь, являющийся циклом, то есть
+замкнутый путь, проходящий через каждое ребро графа ровно по одному
+разу.
+Эйлеров граф &mdash; граф, содержащий эйлеров цикл.
 <br>
 <br>
 <br>
 <img style="width: 553px; height: 407px;" alt=""
- src="hjbj.JPG"><br>
-<span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);"><span><span></span></span></span><br>
-<span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;">Гамильто́нов
-граф &mdash; математический объект теории графов. Представляет
-собой
-граф, который содержит гамильтонов цикл. При этом гамильтоновым циклом
+ src="hjbj.JPG">
+<br>
+Гамильто́нов граф математический объект теории графов.
+Представляет собой граф, который содержит гамильтонов цикл. При этом
+гамильтоновым циклом
 является такой цикл, который проходит через каждую вершину данного
-графа ровно по одному разу</span><br>
+графа ровно по одному разу
+<br>
 <img style="width: 624px; height: 547px;" alt=""
- src="tyfytf.JPG"><img style="width: 705px; height: 564px;"
- alt="" src="fcgfc.JPG"><br>
-<b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">Алгори́тм
-Де́йкстры</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>(англ.
-Dijkstra's<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">algorithm</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;">)
-&mdash;<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">алгоритм</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>на
-графах, изобретённый нидерландским учёным Эдсгером<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">Дейкстрой</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>в
-1959 году. Находит<span>&nbsp;</span></span><b
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);">кратчайшие
-пути</b><span
- style="color: rgb(34, 34, 34); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"><span>&nbsp;</span>от
-одной из вершин графа до всех остальных.</span><br>
-<img style="width: 781px; height: 562px;" alt=""
- src="qwe.JPG"><br>
+ src="tyfytf.JPG"> style="color: rgb(34, 34, 34);
+<img style="width: 705px; height: 564px;" alt=""
+src="fcgfc.JPG"><br>
+src="qwe.JPG">
+<br>
 <img style="width: 446px; height: 311px;" alt=""
- src="file:///C:/Users/batrachenkoko-1/Pictures/alg.PNG"><br>
-<span
- style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;,serif,Times; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 40px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">Рассмотрим
-работу алгоритма на примере графа, показанного на рисунке. Пусть
-требуется найти расстояния от 1-й вершины до всех остальных.<br>
-</span><span
- style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;,serif,Times; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 40px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">Рассмотрим
-шаг алгоритма Дейкстры для нашего примера. Минимальную метку имеет
-вершина 1. Ее соседями являются вершины 2, 3 и 6.</span><br>
-<span
- style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;,serif,Times; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 40px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">Первый
-по очереди сосед вершины 1 &mdash; вершина 2, потому что длина пути
-до нее минимальна. Длина пути в нее через вершину 1 равна кратчайшему
-расстоянию до вершины 1 + длина ребра, идущего из 1 в 2, то есть 0 + 7
-= 7. Это меньше текущей метки вершины 2, поэтому новая метка 2-й
-вершины равна 7.<br>
-</span><span
- style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;,serif,Times; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 40px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">Аналогичную
-операцию проделываем с двумя другими соседями 1-й вершины &mdash;
-3-й и 6-й.<br>
-</span><span
- style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;,serif,Times; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 40px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">Все
-соседи вершины 1 проверены. Текущее минимальное расстояние до вершины 1
-считается окончательным и пересмотру не подлежит (то, что это
+ src="alg.PNG"><br>
+Рассмотрим работу алгоритма на примере графа, показанного на рисунке.
+Пусть требуется найти расстояния от 1-й вершины до всех остальных.<br>
+Рассмотрим шаг алгоритма Дейкстры для нашего примера. Минимальную метку
+имеет вершина 1. Ее соседями являются вершины 2, 3 и 6.<br>
+Первый по очереди сосед вершины 1 &mdash; вершина 2, потому что
+длина пути до нее минимальна. Длина пути в нее через вершину 1 равна
+кратчайшему расстоянию до вершины 1 + длина ребра, идущего из 1 в 2, то
+есть 0 + 7 = 7. Это меньше текущей метки вершины 2, поэтому новая метка
+2-й вершины равна 7.<br>
+Аналогичную операцию проделываем с двумя другими соседями 1-й вершины
+&mdash; 3-й и 6-й.<br>
+Все соседи вершины 1 проверены. Текущее минимальное расстояние до
+вершины 1 считается окончательным и пересмотру не подлежит (то, что это
 действительно так, впервые доказал Дейкстра). Вычеркнем её из графа,
 чтобы отметить, что эта вершина посещена<br>
-</span><span
- style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;,serif,Times; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 40px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">Шаг
-алгоритма повторяется. Снова находим &laquo;ближайшую&raquo; из
-непосещенных вершин. Это вершина 2 с меткой 7 </span>Снова
-пытаемся уменьшить метки соседей выбранной вершины, пытаясь пройти в
-них через 2-ю. Соседями вершины 2 являются 1, 3, 4.Первый (по порядку)
-сосед вершины 2 &mdash; вершина 1. Но она уже посещена, поэтому с
-1-й вершиной ничего не делаем.Следующий сосед вершины 2 &mdash;
-вершины 4 и 3. Если идти в неё через 2-ю, то длина такого пути будет =
-кратчайшее расстояние до 2 + расстояние между вершинами 2 и 4 = 7 + 15
-= 22. Поскольку 22&lt;&infin;, устанавливаем метку вершины 4
-равной 22.<br>
-<span
- style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;,serif,Times; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 40px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">Ещё
-один сосед вершины 2 &mdash; вершина 3. Если идти в неё через 2, то
-длина такого пути будет = 7 + 10 = 17. Но текущая метка третьей вершины
-равна 9&lt;17, поэтому метка не меняется </span>Все соседи
-вершины 2 просмотрены, замораживаем расстояние до неё и помечаем ее как
-посещенную.<span>&nbsp;</span>Повторяем шаг алгоритма,
-выбрав вершину 3<span>&nbsp;</span>Повторяем шаг
-алгоритма для оставшихся вершин (Это будут по порядку 6, 4 и 5).<br
- class="Apple-interchange-newline">
-<p
- style="margin-top: 3pt; font-size: medium; margin-bottom: 3pt; text-indent: 30pt; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;,serif,Times; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">Алгоритм
-заканчивает работу, когда вычеркнуты все вершины. Результат его работы:
-кратчайший путь от вершины 1 до 2-й составляет 7, до 3-й &mdash; 9,
-до 4-й &mdash; 20, до 5-й &mdash; 20, до 6-й &mdash; 11.</p>
-<p
- style="margin-top: 3pt; font-size: medium; margin-bottom: 3pt; text-indent: 30pt; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;,serif,Times; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"></p>
-<p
- style="margin-top: 3pt; font-size: medium; margin-bottom: 3pt; text-indent: 30pt; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;,serif,Times; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"></p>
-<p
- style="margin-top: 3pt; font-size: medium; margin-bottom: 3pt; text-indent: 30pt; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;,serif,Times; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">Поскольку
-алгоритм Дейкстры всякий раз выбирает для обработки вершины с
+Шаг алгоритма повторяется. Снова находим
+&laquo;ближайшую&raquo; из непосещенных вершин. Это вершина 2 с
+меткой 7 Снова пытаемся уменьшить метки соседей выбранной вершины,
+пытаясь пройти в них через 2-ю. Соседями вершины 2 являются 1, 3,
+4.Первый (по порядку) сосед вершины 2 &mdash; вершина 1. Но она уже
+посещена, поэтому с 1-й вершиной ничего не делаем.Следующий сосед
+вершины 2 &mdash; вершины 4 и 3. Если идти в неё через 2-ю, то
+длина такого пути будет = кратчайшее расстояние до 2 + расстояние между
+вершинами 2 и 4 = 7 + 15 = 22. Поскольку 22&lt;&infin;,
+устанавливаем метку вершины 4 равной 22.<br>
+Ещё один сосед вершины 2 &mdash; вершина 3. Если идти в неё через
+2, то длина такого пути будет = 7 + 10 = 17. Но текущая метка третьей
+вершины равна 9&lt;17, поэтому метка не меняется Все соседи вершины
+2 просмотрены, замораживаем расстояние до неё и помечаем ее как
+посещенную. Повторяем шаг алгоритма, выбрав вершину 3 Повторяем шаг
+алгоритма для оставшихся вершин (Это будут по порядку 6, 4 и 5).<br>
+Алгоритм заканчивает работу, когда вычеркнуты все вершины. Результат
+его работы: кратчайший путь от вершины 1 до 2-й составляет 7, до 3-й
+&mdash; 9, до 4-й &mdash; 20, до 5-й &mdash; 20, до 6-й
+&mdash; 11.<br>
+<br>
+Поскольку алгоритм Дейкстры всякий раз выбирает для обработки вершины с
 наименьшей оценкой кратчайшего пути, можно сказать, что он относится к
-жадным алгоритмам.</p>
+жадным алгоритмам.
+<br>
 </body>
 </html>
